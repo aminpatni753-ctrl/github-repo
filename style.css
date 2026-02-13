@@ -141,3 +141,9 @@ img {
         margin-top: 10px;
     }
 }
+
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
