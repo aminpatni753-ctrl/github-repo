@@ -1,0 +1,143 @@
+body{
+  color: black;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-navbar {
+    background-color: #0B2C4D;
+    padding: 12px 30px;
+}
+
+/* LOGO */
+.navbar-brand {
+    color: #FFFFFF;
+}
+
+/* NAV LINKS */
+/* NAV LINK UNDERLINE EFFECT */
+.custom-navbar .nav-link {
+    position: relative;
+    padding-bottom: 6px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+/* LINE (hidden by default) */
+.custom-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #F4B400;
+    /* Golden */
+    transition: width 0.3s ease-in-out;
+}
+
+/* HOVER EFFECT */
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #F4B400;
+}
+
+/* LOGIN / REGISTER BUTTONS */
+.auth-buttons .btn {
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* LOGIN BUTTON */
+.auth-buttons .btn-login {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.auth-buttons .btn-login:hover {
+    background-color: #FFFFFF !important;
+    color: #0B2C4D !important;
+}
+
+/* REGISTER BUTTON */
+.auth-buttons .btn-register {
+    background-color: #F4B400 !important;
+    color: #0B2C4D !important;
+    border: none !important;
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.auth-buttons .btn-register:hover {
+    background-color: #d9a300 !important;
+    color: #0B2C4D !important;
+}
+
+/* TOGGLER */
+.navbar-toggler {
+    border-color: #FFFFFF;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+    .auth-buttons {
+        margin-top: 10px;
+    }
+}
